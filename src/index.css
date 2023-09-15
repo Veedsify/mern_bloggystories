@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background: url("/images/bg.svg"),
+        linear-gradient(45deg, #6e436c 25%, #2a4584 55%);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.bg-gradient {
+    background: url("/images/bg.svg"),
+        linear-gradient(45deg, #6e436c 25%, #2a4584 55%);
+}
+
+.OF {
+    font-family: "Jost", sans-serif !important;
+}
+
+.what-is,
+.write-creative,
+.home_features>div,
+.home_pricing {
+    position: relative;
+}
+
+.what-is::after {
+    content: "";
+    position: absolute;
+    width: 0.09rem;
+    height: 223px;
+    background: #fff;
+    bottom: -223px;
+    left: 50%;
+    z-index: -20;
+    transform: translateX(-50%);
+}
+
+.write-creative::after {
+    content: "";
+    position: absolute;
+    width: 0.09rem;
+    height: 400px;
+    background: #fff;
+    bottom: -400px;
+    left: 50%;
+    z-index: -20;
+    transform: translateX(-50%);
+}
+
+img {
+    max-width: 100%;
+}
+
+.aspect-4x3 {
+    aspect-ratio: 4/3;
+}
+
+.home_features>div::after {
+    content: "";
+    position: absolute;
+    width: 0.09rem;
+    height: 240px;
+    background: #fff;
+    bottom: -240px;
+    left: 50%;
+    z-index: -20;
+    transform: translateX(-50%);
+}
+.home_pricing::after {
+    content: "";
+    position: absolute;
+    width: 0.09rem;
+    height: 131px;
+    background: #fff;
+    bottom: -131px;
+    left: 50%;
+    z-index: -20;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width:768px) {
+    .home_pricing::after {
+        content: "";
+        position: absolute;
+        width: 0.09rem;
+        height: 146px;
+        background: #fff;
+        bottom: -146px;
+        left: 50%;
+        z-index: -20;
+        transform: translateX(-50%);
+    }
+}
+
+.border-thin {
+    border-top: 0.02rem solid #fff;
+}
+
+.get_started_home {
+    border: 1px solid #d9d9d9;
+}
+
+.or {
+    position: relative;
+    color: #fff;
+}
+
+.or::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: -89px;
+    transform: translateY(-50%);
+    transform: translateX();
+    height: 0.03rem;
+    background-color: #fff;
+    z-index: -2;
+}
