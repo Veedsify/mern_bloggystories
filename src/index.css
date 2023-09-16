@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    font-size: 90%;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Space Grotesk", sans-serif;
-    background: url("/images/bg.svg"),
-        linear-gradient(45deg, #6e436c 25%, #2a4584 55%);
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
 }
 
 .bg-gradient {
     background: url("/images/bg.svg"),
         linear-gradient(45deg, #6e436c 25%, #2a4584 55%);
+        background-size: cover;
 }
 
 .OF {
@@ -32,9 +32,9 @@ body {
     content: "";
     position: absolute;
     width: 0.09rem;
-    height: 223px;
+    height: 100vh;
     background: #fff;
-    bottom: -223px;
+    bottom: -100vh;
     left: 50%;
     z-index: -20;
     transform: translateX(-50%);
@@ -44,9 +44,9 @@ body {
     content: "";
     position: absolute;
     width: 0.09rem;
-    height: 400px;
+    height: 100vh;
     background: #fff;
-    bottom: -400px;
+    bottom: -100vh;
     left: 50%;
     z-index: -20;
     transform: translateX(-50%);
@@ -64,9 +64,9 @@ img {
     content: "";
     position: absolute;
     width: 0.09rem;
-    height: 240px;
-    background: #fff;
-    bottom: -240px;
+    height: 100vh;
+    background: #707070;
+    bottom: -100vh;
     left: 50%;
     z-index: -20;
     transform: translateX(-50%);
