@@ -5,8 +5,8 @@ const HomePricing = () => {
   return (
     <>
       <section>
-        <div className="max-w-screen-xl mx-auto mb-16 mt-14 px-4 py-3 md:px-7 md:py-5 flex justify-center">
-          <div className="bg-black bg-opacity-50 rounded-md home_pricing">
+        <div className="max-w-screen-xl mx-auto mb-16 px-4 py-3 md:px-7 md:py-5 flex justify-center">
+          <div className="bg-black bg-opacity-50 rounded-md home_pricing backdrop-blur-xl">
             <HomePricingTitle />
             <HomePricingFeatures />
             <div className="py-6 px-6 md:py-22 md:px-20 pb-16 text-white">

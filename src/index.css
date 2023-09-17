@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
     font-size: 90%;
     scroll-behavior: smooth;
 }
@@ -14,7 +14,7 @@ body {
 .bg-gradient {
     background: url("/images/bg.svg"),
         linear-gradient(45deg, #6e436c 25%, #2a4584 55%);
-        background-size: cover;
+    background-size: cover;
 }
 
 .OF {
@@ -45,7 +45,7 @@ body {
     position: absolute;
     width: 0.09rem;
     height: 100vh;
-    background: #fff;
+    background: #ffffff94;
     bottom: -100vh;
     left: 50%;
     z-index: -20;
@@ -65,18 +65,19 @@ img {
     position: absolute;
     width: 0.09rem;
     height: 100vh;
-    background: #707070;
+    background: #ffffff94;
     bottom: -100vh;
     left: 50%;
     z-index: -20;
     transform: translateX(-50%);
 }
+
 .home_pricing::after {
     content: "";
     position: absolute;
     width: 0.09rem;
     height: 131px;
-    background: #fff;
+    background: #ffffff94;
     bottom: -131px;
     left: 50%;
     z-index: -20;
@@ -89,7 +90,7 @@ img {
         position: absolute;
         width: 0.09rem;
         height: 146px;
-        background: #fff;
+        background: #ffffff94;
         bottom: -146px;
         left: 50%;
         z-index: -20;

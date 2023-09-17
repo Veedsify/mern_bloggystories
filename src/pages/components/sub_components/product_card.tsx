@@ -5,7 +5,7 @@ const ProductCard = () => {
   return (
     <>
       <li>
-        <div className="group block overflow-hidden">
+        <div className="group block overflow-hidden rounded-lg shadow-xl">
           <Link to="/product/1">
             <img
               src="/images/img3.jpg"
@@ -15,50 +15,31 @@ const ProductCard = () => {
           </Link>
 
           <div className="relative bg-white pt-3">
-            <Link to="/product/1">
-              <h3 className="text-lg p-2 text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            <Link to="/product/1" className="flex items-center border-b py-3">
+              <h3 className="text-2xl p-2 md:p-4 text-gray-700 group-hover:underline group-hover:underline-offset-4">
                 Basic Tee
               </h3>
-            </Link>
-
-            <p className="mt-2">
-              <span className="sr-only"> Regular Price </span>
-
-              <span className="tracking-wider text-sm inline-block mb-4 p-2 text-gray-900">
-                £24.00 GBP.
+              <span className="ml-auto p-2 md:p-4 tracking-wider text-base inline-block  text-gray-900">
+                £24.00
               </span>
-              <div className="p-2">
-                <label htmlFor="Quantity" className="sr-only">
-                  Quantity
-                </label>
-
-                <div className="flex items-center justify-around border  rounded mb-3">
-                  <button
-                    type="button"
-                    className="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
-                  >
-                    &minus;
-                  </button>
-
-                  <input
-                    type="number"
-                    id="Quantity"
-                    value="0"
-                    className="h-10 w-16 border-transparent text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
+            </Link>
+            <div className="p-2 md:p-4">
+              <div className="flex gap-3 items-center">
+                <Link to="/author/1">
+                  <img
+                    src="/images/img1.jpg"
+                    className="rounded-full aspect-square object-cover w-16 border-4 border-white shadow-md"
+                    alt=""
                   />
-
-                  <button
-                    type="button"
-                    className="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
-                  >
-                    +
-                  </button>
+                </Link>
+                <div>
+                  <small className="italic">By</small>
+                  <Link to="/author/1">
+                    <h5>HastyTimesBlogs</h5>
+                  </Link>
                 </div>
-                <button className="flex items-center w-full py-2 justify-center gap-2 text-white bg-red-400  border rounded">
-                  Add to Cart <BsCart2 />
-                </button>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </li>

@@ -5,7 +5,7 @@ const HomeGetStarted = () => {
     <>
       <section className="py-10">
         <div className="max-w-screen-xl mx-auto flex items-center justify-center mb-20 px-4 py-3 md:px-7 md:py-5">
-          <div className="get_started_home text-center p-16 md:p-28 text-white">
+          <div className="get_started_home text-center p-16 md:p-28 text-white backdrop-blur-lg">
             <h2 className="font-medium text-3xl md:text-4xl mb-5 OF">
               Sound Good?
             </h2>
@@ -13,7 +13,7 @@ const HomeGetStarted = () => {
               Click below to get started. no credit card required
             </p>
             <Link
-              className="inline-block py-5 px-10 rounded bg-red-500 text-white"
+              className="inline-block py-5 px-10 rounded bg-red-500 hover:bg-red-600 text-white"
               to="/"
             >
               Choose a start

@@ -15,7 +15,7 @@ const PricingGetStarted = () => {
               you
             </p>
             <Link
-              className="inline-block py-3 px-10 rounded bg-red-500 text-white"
+              className="inline-block py-3 px-10 rounded bg-red-500 hover:bg-red-600 text-white"
               to="/"
             >
               Start Trial

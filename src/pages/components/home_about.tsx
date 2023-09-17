@@ -5,7 +5,7 @@ const HomeAbout = () => {
     <>
       <section className="py-10" id="home_about">
         <div className="max-w-screen-xl mx-auto mb-16 mt-14 px-4 py-3 md:px-7 md:py-5 flex justify-center">
-          <div className="bg-black bg-opacity-50 rounded-md write-creative">
+          <div className="bg-black bg-opacity-50 rounded-md write-creative backdrop-blur-xl">
             <div className="p-10 md:p-36">
               <h2 className="OF font-medium text-4xl md:text-6xl mb-6 text-center text-white leading-snug">
                 Write creative blog post, on any topic, anytime anywhere
